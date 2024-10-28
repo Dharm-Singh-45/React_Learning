@@ -1,0 +1,52 @@
+/* src/components/Calculator.css */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f9fc; /* Light background for the calculator */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 320px; /* Fixed width for consistency */
+    margin: auto; /* Center the calculator */
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+  }
+  
+  button {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4CAF50; /* Main button color */
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  button:active {
+    background-color: #3e8e41; /* Even darker when clicked */
+  }
+  
+  button.operator {
+    background-color: #f39c12; /* Orange for operator buttons */
+  }
+  
+  button.clear {
+    background-color: #e74c3c; /* Red for clear button */
+  }
+  
+  button.equals {
+    background-color: #2ecc71; /* Green for equals button */
+  }
+  
